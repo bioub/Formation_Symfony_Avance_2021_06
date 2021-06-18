@@ -1,0 +1,4 @@
+services:
+  App\Manager\ContactManagerInterface:
+    public: true
+    class: App\Tests\Fake\ContactManagerFake

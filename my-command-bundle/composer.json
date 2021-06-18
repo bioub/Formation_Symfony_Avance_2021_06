@@ -1,0 +1,29 @@
+{
+    "name": "romain/my-command-bundle",
+    "version": "1.0.0",
+    "description": "Mon bundle perso",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain Bohdanowicz",
+            "email": "romain.bohdanowicz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "nelmio/alice": "^3.8",
+        "doctrine/orm": "^2.9",
+        "symfony/console": "^4.4 || ^5.3",
+        "symfony/http-kernel": "^5.3",
+        "symfony/config": "^5.3",
+        "symfony/dependency-injection": "^5.3",
+        "doctrine/doctrine-bundle": "^2.4",
+        "symfony/security-bundle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Romain\\MyCommandBundle\\": "./src"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{% form_theme contactForm "bootstrap_5_layout.html.twig" %}
+{% extends "base.html.twig" %}
+
+{% block title %}Add a contact - AddressBook{% endblock %}
+
+{% block body %}
+  <h2 class="mt-4 mb-3">Add a contact</h2>
+
+  {{ form_start(contactForm, {'attr': {'novalidate': 'novalidate'} }) }}
+
+  {{ form_row(contactForm.firstName) }}
+  {{ form_row(contactForm.lastName) }}
+  {{ form_row(contactForm.email) }}
+  {{ form_row(contactForm.telephone) }}
+
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Add</button>
+  </div>
+  {{ form_end(contactForm) }}
+
+{% endblock %}

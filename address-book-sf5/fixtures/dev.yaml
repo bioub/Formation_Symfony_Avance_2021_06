@@ -1,0 +1,18 @@
+App\Entity\Company:
+  company{1..5}:
+    name: '<company()>'
+    city: '<city()>'
+
+App\Entity\Contact:
+  contact{1..10}:
+    firstName: '<firstName()>'
+    lastName: '<lastName()>'
+    email: '<email()>'
+    telephone: '<phoneNumber()>'
+    company: '50%? @company*'
+
+App\Entity\User:
+  user1:
+    username: romain
+    password: 123456
+    roles: ['ROLE_ADMIN']

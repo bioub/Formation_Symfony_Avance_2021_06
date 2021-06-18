@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {{ encore_entry_link_tags('app') }}
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{{ include('top-menu.html.twig') }}
+<div class="container mt-4">
+{#    {{ include('flash-alert.html.twig') }}#}
+    {{ flashAlert('success') }}
+    {% block body %}{% endblock %}
+</div>
+{{ encore_entry_script_tags('app') }}
+{% block javascripts %}{% endblock %}
+
+</body>
+</html>
